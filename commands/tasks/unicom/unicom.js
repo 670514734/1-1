@@ -201,10 +201,10 @@ var start = async (params) => {
     await require('./producGame').gameSignin(request, options)
   }, taskOption)
 
-/*  // 首页-游戏-娱乐中心-天天领取3G流量包
+  // 首页-游戏-娱乐中心-天天领取3G流量包
   await scheduler.regTask('dailygameflow', async (request) => {
     await require('./producGame').doGameFlowTask(request, options)
-  }, taskOption)*/
+  }, taskOption)
 
   // 首页-积分查询-游戏任务
   await scheduler.regTask('dailygameIntegral', async (request) => {
@@ -360,9 +360,9 @@ var start = async (params) => {
   // }, taskOption)
 
   // 话费购签到
-  await scheduler.regTask('hfgo', async (request) => {
+  /*await scheduler.regTask('hfgo', async (request) => {
     await require('./hfgo').doTask(request, options)
-  }, taskOption)
+  }, taskOption)*/
 
   // 首页-签到-APP下载领积分
   await scheduler.regTask('dailyDownloadApp', async (request) => {
